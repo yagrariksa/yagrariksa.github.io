@@ -1,1 +1,234 @@
+/*  KALO GA ADA MEDIA-QUERY BISA */
 
+* {
+    font-family: 'Staatliches', cursive;
+}
+
+div#konten-utama {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px !important;
+}
+
+div#bag-right {
+    order: 3;
+
+}
+
+a.navbar-brand {
+    font-size: 3em;
+    transition: 0.5s all ease;
+    animation: ease zum 2s infinite;
+    transform: translateY(10px);
+}
+
+@keyframes zum {
+    0% {
+        transform: translateY(-10px);
+
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+
+    }
+}
+
+
+
+nav#kepala {
+    background-color: #5cdb95 !important;
+}
+
+nav#kepala * {
+    color: #05386B !important;
+    /* color: #5cdb95 !important; */
+}
+
+body {
+    background-color: #5cdb95 !important;
+    color: #05386B !important;
+}
+
+body ul.nav {
+    background-color: #05386B !important;
+}
+
+body ul.nav li a {
+    color: #5cdb95 !important;
+    transition: 0.3s ease all;
+}
+
+body ul.nav li a:hover,
+a.navbar-brand:hover {
+    transform: scale(1.3);
+    animation: none;
+}
+
+div.navbar-collapse form button.btn {
+    border: 1px solid #05386B !important;
+    background-color: rgb(1, 1, 1, 0);
+    transition: all 0.3s ease;
+}
+
+div.navbar-collapse form button.btn:hover {
+    /* border-color: #5cdb95; */
+    transform: translateX(5px);
+    /* color: #5cdb95 !important; */
+}
+
+div#bag-left a.list-group-item:hover,
+div#bag-right a.list-group-item:hover {
+    color: #5cdb95 !important;
+    background-color: #edf5e1;
+}
+
+div#bag-left a.list-group-item,
+div#bag-right a.list-group-item {
+    background-color: #8ee4af;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #05386B;
+    font-size: 18px;
+    transition: 0.3s ease all;
+    /* letter-spacing: 0.3 !important; */
+}
+
+div.card div.card-body {
+    background-color: #8ee4af;
+    padding: 1rem 0 0 0;
+    color: #05386B;
+}
+
+div.card div.card-body a {
+    display: block;
+    background-color: #05386B;
+    color: #8ee4af;
+    /* transition: ease 0.5s all; */
+}
+
+div.card {
+    transition: 0.5s ease all;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+div.card:hover {
+    transform: scale(1.05) translateY(-5px);
+    cursor: pointer;
+}
+
+div.carousel-caption h5,
+div.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.container ul.nav li.nav-item a {
+    font-size: 20px !important;
+}
+
+.row div#other-link .card {
+    background-color: #05386b00 !important;
+    padding: 10px !important;
+    padding-bottom: 0 !important;
+    padding-left: 0px;
+    width: 100% !important;
+    margin: 20px auto !important;
+}
+
+.row div#other-link .card:hover {
+    transform: scale(1) !important;
+
+}
+
+.row div#other-link .card a:hover {
+    transform: translateX(10px);
+    color: #5cdb95 !important;
+    background-color: #edf5e1;
+
+}
+
+.row div#other-link .card a {
+    border: 1px solid white;
+    border-radius: 3px;
+    color: #edf5e1 !important;
+    padding: 6px !important;
+    margin-bottom: 10px;
+    display: flex !important;
+    transition: 0.3s all ease;
+    /* justify-content: center !important; */
+
+}
+
+
+ul#upperlink li a.nav-link:hover {
+    transform: scale(1.1) translateY(-4px) translateX(-4px);
+}
+
+@media only screen and (min-width:1000px) {
+    div#navbarTogglerDemo02 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#navbarTogglerDemo02 ul {
+        display: flex;
+    }
+
+    div#navbarTogglerDemo02 ul li {
+        display: block;
+    }
+
+    ul#upperlink li a.nav-link {
+        font-size: 17px;
+        margin-left: 20px !important;
+        transition: 0.3s all ease;
+
+    }
+
+
+}
+
+@media only screen and (max-width:1200px) {
+
+    div#bag-right a.list-group-item,
+    .row div#other-link .card {
+        width: 50% !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .row div#other-link .card a {
+        padding: 6px 30% !important
+    }
+
+    #carouselExampleIndicators {
+        transform: scale(0.95);
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+
+
+    div#bag-left {
+        order: 1;
+    }
+
+    ul#upperlink li a.nav-link {
+        margin-left: 0 !important;
+    }
+
+    div#bag-left a.list-group-item {
+        width: 50% !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width:786px) {}
